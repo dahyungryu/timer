@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>위니브타이머</title>
+  </head>
+  <body>
+    <header>
+      <h1 class="sr-only">위니브타이머</h1>
+      <img src="./src/weniv-logo.svg" alt="위니브" class="logo" />
+    </header>
+    <main>
+      <div class="container">
+        <h2>TIMER</h2>
+        <div class="division"></div>
+        <div class="real-time">
+          <input type="number" id="hrs" placeholder="00" min="0" max="99" />
+          <input type="number" id="min" placeholder="00" min="0" max="59" />
+          <input type="number" id="sec" placeholder="00" min="0" max="59" />
+          <input type="number" />
+        </div>
+
+        <div class="btn-group">
+          <button id="start-pause">START</button>
+          <button id="reset">RESET</button>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p>@WENIV CORP.</p>
+    </footer>
+
+
+    <script src="./script.js"></script>
+  </body>
+</html>
