@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./main.css" />
     <title>위니브타이머</title>
   </head>
   <body>
@@ -14,23 +15,30 @@
       <div class="container">
         <h2>TIMER</h2>
         <div class="division"></div>
-        <div class="real-time">
-          <input type="number" id="hrs" placeholder="00" min="0" max="99" />
-          <input type="number" id="min" placeholder="00" min="0" max="59" />
-          <input type="number" id="sec" placeholder="00" min="0" max="59" />
-          <input type="number" />
+        <div class="timer">
+          <label for="hrs"
+            >HRS <br />
+            <input type="number" id="hrs" placeholder="00" min="0" max="99"
+          /></label>
+          <label for="min"
+            >MIN<br />
+            <input type="number" id="min" placeholder="00" min="0" max="59"
+          /></label>
+          <label for="sec"
+            >SEC <br />
+            <input type="number" id="sec" placeholder="00" min="0" max="59"
+          /></label>
         </div>
 
         <div class="btn-group">
-          <button id="start-pause">START</button>
-          <button id="reset">RESET</button>
+          <button id="start-pause" class="btn">START</button>
+          <button id="reset" class="btn">RESET</button>
         </div>
       </div>
     </main>
     <footer>
       <p>@WENIV CORP.</p>
     </footer>
-
 
     <script src="./script.js"></script>
   </body>
